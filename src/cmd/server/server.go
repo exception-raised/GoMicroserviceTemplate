@@ -28,7 +28,7 @@ func Execute() {
 		log.Fatalf("Failed to create storage client: %+v", err)
 	}
 
-	authService, err := service.NewService(
+	service, err := service.NewService(
 		service.WithStorage(storageClient),
 	)
 
@@ -38,7 +38,7 @@ func Execute() {
 	}
 
 	s := server.NewServer(
-		server.WithService(authService),
+		server.WithService(service),
 	)
 
 	go func() {
