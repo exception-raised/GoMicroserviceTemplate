@@ -10,6 +10,8 @@
 │   │   ├── config/          # Configuration setup
 │   │   ├── main.go          # Main application entry
 │   │   └── server/          # Server execution
+|   ├── internal/            # Internal functionality specific to every microservice.
+|   |   └── http/            # HTTP client
 │   ├── models/              # Data models
 │   ├── server/              # HTTP server implementation
 │   ├── service/             # Business logic layer
